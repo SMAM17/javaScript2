@@ -56,6 +56,7 @@ function papas() {
 }
 
 //almaceno la cantidad de pizzas por el precio de cada una
+
 let precioHawaiana = hawaiana() * 20000;
 let precioMexicana = mexicana() * 23000;
 let precioPollo = pollo() * 26000;
@@ -75,78 +76,58 @@ let precioBocadillos = bocadillos() * 2000;
 let precioPapas = papas() * 4000;
 
 //pizzas
+function resultado(){
+  let total = document.getElementById("liquidar");
+  if (precioHawaiana > 0) {
+    total.innerHTML+="<br/>el total de las pizzas es: " + precioHawaiana;
+  }
+  if (precioMexicana > 0) {
+    total.innerHTML+="<br/>el total de las pizzas es: " + precioMexicana;
+  }
+  if (precioPollo > 0) {
+    total.innerHTML+="<br/>el total de las pizzas es: " + precioPollo;
+  }
+  if (precioItaliana > 0) {
+    total.innerHTML+="<br/>el total de las pizzas es: " + precioItaliana;
+  }
+  
+  //bebidas
+  
+  if (precioCocaCola > 0) {
+    total.innerHTML+="<br/>el total de las bebidas CocaCola es : " + precioCocaCola;
+  }
+  if (precioSprit > 0) {
+    total.innerHTML+="<br/>el total de las bebida sprit es: " + precioSprit;
+  }
+  if (precioManzana > 0) {
+    total.innerHTML+="<br/>el total de las bebida manzana es: " + precioManzana;
+  }
+  if (precioColombiana > 0) {
+    total.innerHTML+="<br/>el total de las bebida colombiana es: " + precioColombiana;
+  }
+  
+  //pasabocas
+  
+  if (precioPasteles > 0) {
+    total.innerHTML+="<br/>el total de los pasteles es : " + precioPasteles;
+  }
+  if (precioDedos > 0) {
+    total.innerHTML+="<br/>el total de los dedos es: " + precioDedos;
+  }
+  if (precioBuñuelos > 0) {
+    total.innerHTML+="<br/>el total de los buñuelos: " + precioBuñuelos;
+  }
+  if (precioBocadillos > 0) {
+    total.innerHTML+="<br/>el total de los bocadillos es : " + precioBocadillos;
+  }
+  if (precioPapas > 0) {
+    total.innerHTML+= "<br/>el total de las papas es : " + precioPapas;
+  }
+  
 
-if (precioHawaiana > 0) {
-  total.innerHTML("el total de las pizzas es: " + precioHawaiana);
-}
-if (precioMexicana > 0) {
-  total.innerHTML("el total de las pizzas es: " + precioMexicana);
-}
-if (precioPollo > 0) {
-  total.innerHTML("el total de las pizzas es: " + precioPollo);
-}
-if (precioItaliana > 0) {
-  total.innerHTML("el total de las pizzas es: " + precioItaliana);
+
 }
 
-//bebidas
-
-if (precioCocaCola > 0) {
-  total.innerHTML("el total de las bebidas CocaCola es : " + precioCocaCola);
-}
-if (precioSprit > 0) {
-  total.innerHTML("el total de las bebida sprit es: " + precioSprit);
-}
-if (precioManzana > 0) {
-  total.innerHTML("el total de las bebida manzana es: " + precioManzana);
-}
-if (precioColombiana > 0) {
-  total.innerHTML("el total de las bebida colombiana es: " + precioColombiana);
-}
-
-//pasabocas
-
-if (precioPasteles > 0) {
-  total.innerHTML("el total de los pasteles es : " + precioPasteles);
-}
-if (precioDedos > 0) {
-  total.innerHTML("el total de los dedos es: " + precioDedos);
-}
-if (precioBuñuelos > 0) {
-  total.innerHTML("el total de los buñuelos: " + precioBuñuelos);
-}
-if (precioBocadillos > 0) {
-  total.innerHTML("el total de los bocadillos es : " + precioBocadillos);
-}
-if (precioPapas > 0) {
-  total.innerHTML("el total de las papas es : " + precioPapas);
-}
 
 //donde voy a reflejar la factura
-let total = document.getElementById("liquidar");
 
-total.innerHTML = precioHawaiana +=
-  "<br>" +=
-  precioMexicana +=
-  "<br>" +=
-  precioPollo +=
-  "<br>" +=
-  precioItaliana +=
-  "<br>" +=
-  precioCocaCola +=
-  "<br>"+=
-  precioSprit +=
-  "<br>" +=
-  precioManzana +=
-  "<br>"+=
-  precioColombiana +=
-  "<br>"+=
-  precioPasteles +=
-  "<br>"+=
-  precioDedos +=
-  "<br>"+=
-  precioBuñuelos +=
-  "<br>"+=
-  precioBocadillos +=
-  "<br>"+=
-  precioPapas
