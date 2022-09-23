@@ -123,7 +123,7 @@ if (precioPapas > 0) {
 }
 
 //donde voy a reflejar la factura
-let total = document.getElementById("total");
+let total = document.getElementById("liquidar");
 
 total.innerHTML = precioHawaiana +=
   "<br>" +=
