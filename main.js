@@ -1,79 +1,79 @@
-function hawaiana() {
+function Chawaiana() {
   let hawaiana = document.getElementById("hawaiana").value;
   return hawaiana;
 }
 
-function mexicana() {
+function Cmexicana() {
   let mexicana = document.getElementById("mexicana").value;
   return mexicana;
 }
-function pollo() {
+function Cpollo() {
   let pollo = document.getElementById("pollo").value;
   return pollo;
 }
-function italiana() {
+function Citaliana() {
   let italiana = document.getElementById("italiana").value;
   return italiana;
 }
 
-function cocaCola() {
+function CcocaCola() {
   let cocaCola = document.getElementById("cocaCola").value;
   return cocaCola;
 }
-function sprit() {
+function Csprit() {
   let sprit = document.getElementById("sprit").value;
   return sprit;
 }
-function manzana() {
+function Cmanzana() {
   let manzana = document.getElementById("manzana").value;
   return manzana;
 }
-function colombiana() {
+function Ccolombiana() {
   let colombiana = document.getElementById("colombiana").value;
   return colombiana;
 }
 
-function pasteles() {
+function Cpasteles() {
   let pasteles = document.getElementById("pasteles").value;
   return pasteles;
 }
 
-function dedos() {
+function Cdedos() {
   let dedos = document.getElementById("dedos").value;
   return dedos;
 }
-function buñuelos() {
-  let pasteles = document.getElementById("buñuelos").value;
+function Cbuñuelos() {
+  let buñuelos = document.getElementById("buñuelos").value;
   return buñuelos;
 }
-function bocadillos() {
+function Cbocadillos() {
   let bocadillos = document.getElementById("bocadillos").value;
   return bocadillos;
 }
-function papas() {
+function Cpapas() {
   let papas = document.getElementById("papas").value;
   return papas;
 }
 
 //almaceno la cantidad de pizzas por el precio de cada una
 
-let precioHawaiana = hawaiana() * 20000;
-let precioMexicana = mexicana() * 23000;
-let precioPollo = pollo() * 26000;
-let precioItaliana = italiana() * 22000;
+let precioHawaiana = Chawaiana() * 20000;
+let precioMexicana = Cmexicana() * 23000;
+let precioPollo = Cpollo() * 26000;
+let precioItaliana = Citaliana() * 22000;
 
 //almaceno la cantidad de bebidas por el precio de cada una
-let precioCocaCola = cocaCola() * 3500;
-let precioSprit = sprit() * 3500;
-let precioManzana = manzana() * 3500;
-let precioColombiana = colombiana() * 3500;
+let precioCocaCola = CcocaCola() * 3500;
+let precioSprit = Csprit() * 3500;
+let precioManzana = Cmanzana() * 3500;
+let precioColombiana = Ccolombiana() * 3500;
 
 //almaceno la cantidad de pasabocas por el precio
-let precioPasteles = pasteles() * 2500;
-let precioDedos = dedos() * 1500;
-let precioBuñuelos = buñuelos() * 2000;
-let precioBocadillos = bocadillos() * 2000;
-let precioPapas = papas() * 4000;
+let precioPasteles = Cpasteles() * 2500;
+let precioDedos = Cdedos() * 1500;
+let precioBuñuelos = Cbuñuelos() * 2000;
+let precioBocadillos = Cbocadillos() * 2000;
+let precioPapas = Cpapas() * 4000;
 
 //pizzas
 function resultado(){
@@ -123,11 +123,8 @@ function resultado(){
   if (precioPapas > 0) {
     total.innerHTML+= "<br/>el total de las papas es : " + precioPapas;
   }
-  
 
-
+let totalfactura=precioHawaiana+precioMexicana+precioPollo+precioItaliana+precioCocaCola+precioSprit+ precioManzana+precioColombiana+precioPasteles+precioDedos+precioBuñuelos+precioBocadillos+precioPapas+1500;
+total.innerHTML+="<br/>el valor de la factura es: "+totalfactura;
+total.innerHTML+="<br/>el valor del domicilio es : 1500 ";
 }
-
-
-//donde voy a reflejar la factura
-
