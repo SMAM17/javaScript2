@@ -79,16 +79,16 @@ let precioPapas = Cpapas() * 4000;
 function resultado(){
   let total = document.getElementById("liquidar");
   if (precioHawaiana > 0) {
-    total.innerHTML+="<br/>el total de las pizzas es: " + precioHawaiana;
+    total.innerHTML+="<br/>el total de la pizza hawaiana es: " + precioHawaiana;
   }
   if (precioMexicana > 0) {
-    total.innerHTML+="<br/>el total de las pizzas es: " + precioMexicana;
+    total.innerHTML+="<br/>el total de la pizza mexicana es: " + precioMexicana;
   }
   if (precioPollo > 0) {
-    total.innerHTML+="<br/>el total de las pizzas es: " + precioPollo;
+    total.innerHTML+="<br/>el total de la pizza de pollo es: " + precioPollo;
   }
   if (precioItaliana > 0) {
-    total.innerHTML+="<br/>el total de las pizzas es: " + precioItaliana;
+    total.innerHTML+="<br/>el total de la pizza italiana es: " + precioItaliana;
   }
   
   //bebidas
